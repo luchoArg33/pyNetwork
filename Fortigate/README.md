@@ -22,5 +22,6 @@ password = 'XXXXX'
 firewall = Forti(ip, user = user, password = password)
 zones = firewall.getZonesInterfaces()
 next_hop = firewall.getNextHop(zones,"X.X.X.X")
-print(next_hop)
+
+next_hop => ['X.X.X.X', '* X.X.X.X', 'AGG_TEST.100']
 ```
