@@ -1,6 +1,9 @@
 # fortiClass.py
-It's a class with a couple of methods. 
-In order to obtain information you can do:
+It's a class with a couple of methods for Fortigate.
+It uses paramiko to connect to CLI and send commands. It collects logs and then parses then with regular expressions.
+Do not use it as is. Check the outputs of your device, modify regular expressions if you need to, verify the commands that are sent in the class (vdom commands for example).
+
+In order to obtain detailed information you can do:
 ```
 from fortiClass import Forti
 help(Forti)
